@@ -1,0 +1,294 @@
+body {
+	background-color: white;
+	font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+    background: White;
+	color: yellow;
+}
+.red {
+	color: red;
+	background-color: white;
+}
+.green {
+	color: green;
+	background-color: white;
+}
+.lila {
+	color: darkviolet;
+	background-color: White;
+}
+.orange {
+	color: orange;
+	background-color: White;
+}
+::-webkit-scrollbar-thumb {
+    background: Black;
+    -webkit-border-radius: 1px;
+    -webkit-box-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+::selection{
+	color: white;
+	background-color: black;
+}
+.linkselected {
+	text-decoration: none;
+	color: blue;
+	color: yellow;
+	display: inline-block;
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+	font-family: 'Lato', sans-serif;
+}
+.linkselected::selection{
+	color: blue;
+	background-color: black;
+}
+div.navigation{
+	margin-top: 0px;
+	width: 100%;
+	height: 45px;
+	left: 0px;
+	top: 0px;
+	position: fixed;
+	background-color: black;
+	color: white;
+	border: solid 1px black;
+}
+.navbar{
+	float:left;
+	width: 75%;
+}
+.glossar{
+	float: right;
+	font-size:120%;
+	margin-right: 10px;	
+}
+.searchbar {
+	position: absolute;
+	right: 1px;
+	height: 45px;
+	width: 100%;
+	border: solid 1px black;
+	background-color: white;
+}
+input[type="text"] {
+	position: absolute;
+	display: block;
+	float: center-right;
+	background-color: black;
+	color: white;
+	top: 10px;
+	right: 5px;
+	box-shadow: inset;
+	width: 4%;
+	height: 15px;
+	border-radius: 5px 5px 5px 5px;
+	border-color: 5px solid white;
+	transition: width 1s, background-color 2s, border 0.5s;
+	
+}
+#input[type="text"] {
+transition-timing-function: ease-in-out;
+}
+.buttons {
+	width: 20px;
+	height: 20px;
+	background-color: transparent;
+	box-shadow: none;
+}
+.buttons:hover{
+	box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.75)
+}
+.buttons:focus{
+	background-color: Black;
+	border-color: Black;
+	outline: 0;
+}
+input[type="text"]:focus{
+	color: black;
+	background-color: white;
+	border-radius: 5px 5px 5px 5px;
+	border-color: 5px solid white;
+	width: 22%;
+	outline: none;
+}
+.code {
+	height: 600px;
+	width: 25%;
+	margin-left: 37.5%;
+	overflow: scroll;
+	border-style: solid;
+	background-color: White;
+	padding: 10px;
+}
+.logo {
+	display: inline-block;
+	vertical-align: top;
+	width: 35px;
+	height: 35px;
+	margin-right: 20px;
+	margin-top: 5px;
+	margin-left: 20px;
+} 
+.img {
+	display: inline-block;
+	vertical-align: top;
+	width: 100px;
+	height: 100px;
+}
+.link{
+	color: White;
+	text-decoration:none;
+	display: inline-block;
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+	opacity: 0.5;
+	font-size: 80%;
+	font-family: 'Lato', sans-serif;
+}
+.linkglossar{
+	color: #3A75A6;
+	text-decoration:none;
+	display: inline-block;
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+	opacity: 1;
+	font-size: 80%;
+	font-family: 'Lato', sans-serif;
+}
+.linkglossar:hover {
+	opacity: 0.8;
+}
+.link:hover {
+	opacity: 1;
+}
+div.heading {
+	text-align:center;
+	
+}
+.übertitel {
+	text-align:center;
+}
+.question {
+	margin-top: 100px;
+	text-align:center;
+	font-style:oblique;
+	font-size: 120%
+}
+.answers{
+	margin-left: 37%;
+	font-size: 100%;
+}
+.answer{
+	text-decoration: none;
+}
+.answercrossed{
+	text-decoration: line-through;
+	color: red;
+}
+.text {
+	text-align: left;
+	margin-left: 20px;
+	margin-right: 20px;
+	padding-left: 370px;
+	padding-right: 370px;
+}
+.Begriffserklärungen{
+	margin-bottom: 75px;
+}
+.Begriffe {
+	text-align: left;
+	margin-left: 70px;
+	margin-right: 70px;
+	padding-left: 420px;
+	padding-right: 420px;
+	margin-bottom: 0px;
+	font-size: 110%;
+}
+.main{
+	margin-top: 100px;
+}
+.nextlocked{
+	margin-left: calc(50% - 100px);
+	width: 200px;
+	height: 50px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	border: solid 2px Red;
+	background-color: transparent;
+	color: Red;
+	font-size: 12px;
+	cursor: not-allowed;
+}
+.nextlocked:hover{
+	background-color: Red;
+	color: white;
+	opacity: 0.3;
+}
+.nextunlocked{
+	margin-left: calc(50% - 100px);
+	width: 200px;
+	height: 50px;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	border: solid 2px Green;
+	background-color: transparent;
+	color: Green;
+	font-size: 12px;
+	cursor: allowed;
+}
+.nextunlocked:hover{
+	background-color: Green;
+	color: white;
+}
+:focus{
+	outline: 0;
+}
+.end {
+	position: absolute;
+	background-color: Black;
+	color: White;
+	width: 100%;
+	font-size: 75%;
+	height: 150px;
+	display: block;
+	text-align:center;
+}
+.end span{
+	position: absolute;
+	bottom: 10px;
+	display: block;
+	left:28%;
+	margin-right: 28%;
+	text-align: center;
+}
+.hilfe{
+	display:block;
+	text-align:center;
+}
+.achtungheader{
+	display: inline-block;
+	padding-left: 530px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 90%;
+	
+}
+.achtung{
+	padding-left: 500px;
+	font-size: 90%;
+	padding-right: 500px;
+	text-align: center;
+	font-style: oblique;
+	padding-bottom: 20px;
+}
