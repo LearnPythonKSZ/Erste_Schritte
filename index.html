@@ -10,6 +10,7 @@
 	<meta charset="utf-8">
 	<meta name="keywords" content="Python, KSZ, lernen, Code, Yves Bischofberger">
 	<script src="CSS_JSS/script.js"></script>
+	<script src="CSS_JSS/answercheck.js"></script>
 </head>
 <body>
 <div class="navigation">
@@ -31,14 +32,110 @@
 	</div>
 </div>
 <div class=main>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
 	<div class="heading">
-		<h1>Under Construction</h1>
+		<h1>Programmieren</h1>
 	</div>
 	<div class="übertitel">
-		<h3>Coming soon!</h3>
+		<h3>Einstieg in das Programmieren mit Python</h3>
 	</div>
-</br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+	<div class="text"> 
+		<p>In diesem Lernkursabschnitt beginnen wir mit dem tatsächlichen Programmieren. Dafür müsst ihr zuerst in der Python IDLE, oder eurer alternativen Entwicklungsumgebung, ein neues Dokument öffnen. Bei der Python IDLE könnt ihr das entweder mit CTRL+N oder File->"New File".</p> 
+		</br> 
+		<p>Beim Programmieren genügt es nicht reinzuschreiben "sage mir was das Resultat von 5+10 ist", denn das versteht Python nicht. Python funktioniert nur mit bestimmten "Befehlen". Der entsprechende Befehl dafür wäre: print(5+10), aber dazu kommen wir später.  </p>
+	</div>
+	<div class="übertitel">
+		<h3>Semantik und Syntax</h3>
+	</div>
+	<div class="text"> 
+		<p>Zwei wichtige Begriffe sind die Syntax und die Semantik. Die Syntax beschreibt wie bestimmte Zeichenfolgen (bzw. Wörter und/oder Sätze) formuliert sein müsse. Ein Beispiel für eine Syntax ist die Grammatik der deutschen Sprache. Nach der Syntax der deutschen Sprache (=Grammatik) ist zum Beispiel "Haste mer nen Schokoriegel" nicht korrekt, gleich wie print 5+10 nach der Syntax von Python ebenfalls nicht korrekt ist, da die Klammern vor 5+10 fehlen. Die Semantik hingegen ist die Bedeutung der Zeichen, Wörter und so weiter. So bedeutet zum Beispiel print(5+10), dass Python das Ergebnis von 5+10 in der Shell ausgegeben werden sollte. Wenn wir dieses Beispiel wieder auf die deutsche Sprache, bedeutet "Könnte ich einen Schokoladenriegel haben?", dass die Person einen Schokoladenriegel haben möchte und man ihm doch bitte diesen Schokoladenriegel geben sollte. </p>
+	</div>
+	<div class="übertitel">
+		<h3>Kommentare</h3>
+	</div>
+	<div class="text"> 
+		<p>Etwas sehr Wichtiges, welches beim Programmieren gerne mal vergessen wird ist das Kommentieren. Kommentare können, besonders bei großen Programmen, uns helfen den Überblick zu bewahren. Außerdem kann man dank diesen Kommentaren oft nachzuvollziehen was man sich bei diesem Schritt überlegt hat. Wenn man vor dem Kommentar ein "#" einfügen, der Rest der Zeile wird bei der Ausführung ignoriert. </p>
+	</div>
+	<div class="achtungheader">
+	<p>Kommentare</p>
+	</div>
+	<div class="achtung">
+	<p>Nach einem # wird der Rest der Zeile von dem Computer ignoriert, dies kann man beispielsweise dazu verwenden, seinen Sourcecode zu kommentieren</p>
+	</div>	
+	<div class="übertitel">
+		<h3>"Hello World"</h3>
+	</div>
+	<div class="text"> 
+		<p>Python ist eine sehr anfängerfreundliche Sprache. Wenn man zum Beispiel "Hello World" in die Shell ausgeben möchte geht das nun sehr einfach mit dem Befehl "Print("Hello World"). Ihr könnt damit auch jedes andere Wort, Zahl oder Variable ausgeben. </p>
+	</div>
+	<div class="achtungheader">
+	<p>Print()</p>
+	</div>
+	<div class="achtung">
+	<p>print() gibt die Zahl, das Wort usw. in der Klammer in die Shell aus. </p>
+	</div>
+	<div class="übertitel">
+		<h3>Datentypen</h3>
+	</div>
+	<div class="text"> 
+		<p>An dieser Stelle würde ich gerne einen Exkurs über die verschiedenen Datentypen einfügen. Wie ihr sicherlich schon bemerkt habt habe ich Hello World mit Anführungs- und Schlusszeichen bei der Erklärung gemacht, bei der allgemeinen Erklärung fehlen diese jedoch. Denn die Anführungs- und Schlusszeichen gehören nicht etwa zum Befehl, sondern werden dafür gebraucht um dem Computer mitzuteilen, dass "Hello World" ein Wort und nicht etwa eine Variable oder eine Zahl ist. Es gibt bei Python verschiedene Datentypen. Die wichtigsten Datentypen für den Anfang sind Strings, Integrer, Floats und Listen. Strings sind Wörter, beziehungsweise Zeichenketten. Generell sind das Wörter, aber auch Zahlen können Zeichenketten sein. Diese werden durch Anführungs- und Schlusszeichen gekennzeichnet. Um einen anderen Datentyp in ein String umzuwandeln, könnt ihr den Befehl str() verwenden. str(53) wäre so zum Beispiel "53". Integrer sind ganzzahlige Zahlen wie zum Beispiel 1, 3 oder 23. Um zum Beispiel eine Kommazahl auf die nächste ganzzahlige Zahl abzurunden und diese in einen Integrer umzuwandeln könnt ihr int() verwenden, int(2.99) ist zum Beispiel 2. Um (Gleit-)Kommazahlen werden gewöhnlicherweise als floats gespeichert. Um eine Zahl in eine Float umzuwandeln solltet ihr float() verwenden. Mithilfe von Listen kann man mehrere Werte in einer Liste speichern. Wie bei allen anderen Datentypen kann man diese danach verändern. Bei einer Liste können nach belieben auch verschiedene Datentypen gelöscht werden. Eine liste erstellt man mit eckigen Klammern. Ein Beispiel hierfür wäre die imaginäre Liste [1,"Apfel", 2.3].  </p>
+	</div>
+	<div class="achtungheader">
+	<p>Datentypen</p>
+	</div>
+	<div class="achtung">
+	<p>String --> Zeichenketten --> str(53) ist die Zeichenkette "53" </p>
+	</br>
+	<p>Integrer --> ganzzahlige Zahlen --> Int(3) ist die ganzzahlige Zahl 3 </p>
+	</br>
+	<p>Float --> Kommazahlen --> float(3.2) ist die Kommazahl 3.2 </p>
+	</br>	
+	<p>Liste --> mehre Werte in einer Liste speichern --> [1,"Apfel", 2.3] ist die Liste mit den Elementen 1, "Apfel" und 2.3 </p>
+	</div>
+	<div class="übertitel">
+		<h3>Operatoren</h3>
+	</div>
+	<div class="text">
+		<p>Das grundlegenden Operatoren wie +,-,* und / (beziehungsweise "Plus","Minus","mal" und "geteilt durch") sind ziemlich selbsterklärend und dieselben wie auf einem gewöhnlichen Taschenrechner. Bei der Division sind die Datentypen wieder ein Thema. Normalerweise erhaltet man bei einer Division immer eine Float als Resultat. Wenn man allerdings ein Integrer als Resultat erhalten will muss man die sogenannte "flooring Division" verwenden. Das Operationszeichen für die "flooring Division" ist ein doppelter Bruchstrich (//). </p>
+		</br> 
+		<p>Eher ungewöhnlich sind die Notationen für das potenzieren und den Modulus(Rest einer Divison). Denn diese sind Zahl**Exponent für die Potenz beziehungsweise Zähler%Nenner für den Modulus. </p>
+	</div>
+	<div class="achtungheader">
+	<p>Operatoren</p>
+	</div>
+	<div class="achtung">
+	<p>Summand+Summand -> addiert zwei Zahlen. </p>
+	</br>
+	<p>Minuend-Subtrahend -> subtrahiert zwei Zahlen. </p>
+	</br>
+	<p>Faktor*Faktor-> multipliziert zwei Zahlen. </p>
+	</br>	
+	<p>Zähler/Nenner-> dividiert zwei Zahlen. Das Resultat ist eine Float (Kommazahl). </p>
+	</br>	
+	<p>Zähler//Nenner->dividiert zwei Zahlen. Das Resultat ist ein Integrer (ganzzahlige Zahl). </p>
+	</br>	
+	<p>Zahl**Exponent-> Zahl wird mit Exponent potenziert </p>
+	</br>	
+	<p>Zähler%Nenner-> Modulus zweier Zahlen. Der Rest der Division ist das Resultat.</p>
+	</div>
+	<div class="question">
+	<p>Was würde Python ausgeben, wenn man ein Python Programm mit dem folgenden Sourcecode ausführen würde: print(5.0%3) ?
+	Answer: 2.0</p>
+	</div>
+	</br>	
+	<div>
+	<input type="text" id="answercheck" onchange="answerfunction()" >
+	</div>
+	<div>
+	<input class="nextlocked" type="button" id="next" value="Aufgabe noch nicht richtig gelöst.">
+	</div>
+	<div class="übertitel">
+	<h2>Begriffserklärungen</h2>
+	</div>
+<div class="Begriffserklärungen">
+	<p class="Begriffe">Software: Der Teil des Computers den man nicht anfassen kann. Software (syn. Programm) kann von einem Computer ausgeführt werden und sagt bestimmter Hardware (Sachen die man anfassen kann) was sie wie zu erledigen bzw. zu berechnen hat. <p>
+	<p class="Begriffe">Binärcode/Maschinensprache: Maschinensprache besteht aus zwei "Zeichen" 1 und 0. Dies da der Computer nur 2 Zustände kennt: Strom fliesst (1), beziehungsweise kein Strom fliesst (0). Diese Maschinensprache kann dann von einem Computer ausgeführt werden. <p>
+	<p class="Begriffe">Quellcode: Ein Text, welcher in einer Programmiersprache geschrieben worden ist und von Menschen gelesen werden kann. Der Computer kann die verschiedenen Befehle einer Programmiersprache in sogenannter Maschinensprache übersetzten, welche dann von einem Computer ausgeführt werden kann. <p>
+	</div>
 	<div class="end" id="end">
 	<img class="img" src="Bilder/Logo.png">
 	<span>LearnPython.ch ist eine öffentliche Website, welche primär für die Schüler der Kantonsschule Zug zur Verfügung steht. Wir übernehmen keine Haftung für allfällige Fehler des Inhaltes und den daraus entstehenden Schäden.<br>Copyright &copy; Yves Bischofberger 2017</p>
