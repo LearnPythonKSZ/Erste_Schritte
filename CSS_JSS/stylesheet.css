@@ -4,7 +4,22 @@ body {
 	margin: 0;
 	padding: 0;
 }
-
+input[type=text] {
+	position: relative;
+	height: 25px;
+	width: 25%;
+	left: 37.5%;
+	right: 37.5%;
+	color: black;
+	border: solid 3px black;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: white;
+}
+::-webkit-input-placeholder {
+	color: black;
+	opacity: 1
+}
 ::-webkit-scrollbar {
     height: 5px;
     width: 5px;
@@ -14,6 +29,35 @@ body {
 .red {
 	color: red;
 	background-color: white;
+}
+.video{
+	width: 1920px;
+	top: 23px;
+	height: 500px;
+	position: absolute;
+	z-index: 0;
+}
+.image{
+	position: relative;
+	margin-top: 270px;
+	bottom: -3px;
+}
+.imagecontainer{
+	margin-left: calc(50% - 200px);
+}
+.Background{
+	position: absolute;
+}
+.overlay{
+	font-family: Bookman, serif;
+	font-size: 300%;
+	position: absolute;
+	text-align:center;
+	z-index: 1;
+	width: 100%;
+	margin-top: 200px; 
+	height: 100px;
+	color: black;
 }
 .green {
 	color: green;
@@ -38,12 +82,22 @@ body {
 }
 .linkselected {
 	text-decoration: none;
-	color: blue;
 	color: yellow;
 	display: inline-block;
 	margin-top: 14px;
 	margin-left: 10px;
 	margin-right: 20px;
+	font-family: 'Lato', sans-serif;
+}
+.linkglossarselected {
+	color: blue;
+	text-decoration:none;
+	display: inline-block;
+	margin-top: 14px;
+	margin-left: 10px;
+	margin-right: 20px;
+	opacity: 1;
+	font-size: 80%;
 	font-family: 'Lato', sans-serif;
 }
 .linkselected::selection{
@@ -60,6 +114,7 @@ div.navigation{
 	background-color: black;
 	color: white;
 	border: solid 1px black;
+	z-index: 5;
 }
 .navbar{
 	float:left;
@@ -78,25 +133,6 @@ div.navigation{
 	border: solid 1px black;
 	background-color: white;
 }
-input[type="text"] {
-	position: absolute;
-	display: block;
-	float: center-right;
-	background-color: black;
-	color: white;
-	top: 10px;
-	right: 5px;
-	box-shadow: inset;
-	width: 4%;
-	height: 15px;
-	border-radius: 5px 5px 5px 5px;
-	border-color: 5px solid white;
-	transition: width 1s, background-color 2s, border 0.5s;
-	
-}
-#input[type="text"] {
-transition-timing-function: ease-in-out;
-}
 .buttons {
 	width: 20px;
 	height: 20px;
@@ -110,14 +146,6 @@ transition-timing-function: ease-in-out;
 	background-color: Black;
 	border-color: Black;
 	outline: 0;
-}
-input[type="text"]:focus{
-	color: black;
-	background-color: white;
-	border-radius: 5px 5px 5px 5px;
-	border-color: 5px solid white;
-	width: 22%;
-	outline: none;
 }
 .code {
 	height: 600px;
@@ -195,6 +223,11 @@ div.heading {
 	text-decoration: line-through;
 	color: red;
 }
+.answertrue{
+	color: green;
+	text-decoration:none;
+	font-size: 100%;
+}
 .text {
 	text-align: left;
 	margin-left: 20px;
@@ -262,6 +295,8 @@ div.heading {
 	height: 150px;
 	display: block;
 	text-align:center;
+	margin-bottom:0 px;
+	z-index: 3;
 }
 .end span{
 	position: absolute;
