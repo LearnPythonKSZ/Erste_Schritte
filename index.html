@@ -15,20 +15,18 @@
 <body>
 <div class="navigation">
 	<div class="navbar">
-	<a href="/index">
 	<img class="logo" src="Bilder/Logo.png">
-	</a>
-	<a href="/Grundlagen" class="link">Die Grundlagen des Programmierens</a>
-	<a href="/IDE" class="link">Die Entwicklungsumgebung</a>
-	<a href="/Erste_Schritte" class="linkselected">Erste Schritte</a>
-	<a href="/Aufbau" class="link">Die Struktur eines Quellcodes</a>	
-	<a href="/Schleifenundverzweigungen" class="link">Schleifen und Verzweigungen</a>
-	<a href="/Operatoren" class="link">Operatoren</a>
-	<a href="/ifelse" class="link">If/else</a>
-	<a href="/AboutMe" class="link">About LearnPythonKSZ</a>
+	<a href="learnpython.ch/Grundlagen" class="linkselected">Die Grundlagen des Programmierens</a>
+	<a href="learnpython.ch/IDE" class="link">Die Entwicklungsumgebung</a>
+	<a href="learnpython.ch/Erste_Schritte" class="link">Erste Schritte</a>
+	<a href="learnpython.ch/Aufbau" class="link">Die Struktur eines Quellcodes</a>	
+	<a href="learnpython.ch/Schleifenundverzweigungen" class="link">Schleifen und Verzweigungen</a>
+	<a href="learnpython.ch/Operatoren" class="link">Operatoren</a>
+	<a href="learnpython.ch/ifelse" class="link">If/else</a>
+	<a href="learnpython.ch/AboutMe" class="link">About LearnPythonKSZ</a>
 	</div>
 	<div class="glossar">
-	<a href="/Glossar" class="linkglossar">Glossar</a>
+	<a href="learnpython.ch/Glossar" class="linkglossar">Glossar</a>
 	</div>
 </div>
 <div class=main>
@@ -74,7 +72,10 @@
 	<p>print() gibt die Zahl, das Wort usw. in der Klammer in die Shell aus. </p>
 	</div>
 	<div class="übertitel">
-		<h3>Datentypen</h3>
+		<h3>Datentypen & Variabeln</h3>
+	</div>
+	<div class="text"> 
+		<p><p>
 	</div>
 	<div class="text"> 
 		<p>An dieser Stelle würde ich gerne einen Exkurs über die verschiedenen Datentypen einfügen. Wie ihr sicherlich schon bemerkt habt habe ich Hello World mit Anführungs- und Schlusszeichen bei der Erklärung gemacht, bei der allgemeinen Erklärung fehlen diese jedoch. Denn die Anführungs- und Schlusszeichen gehören nicht etwa zum Befehl, sondern werden dafür gebraucht um dem Computer mitzuteilen, dass "Hello World" ein Wort und nicht etwa eine Variable oder eine Zahl ist. Es gibt bei Python verschiedene Datentypen. Die wichtigsten Datentypen für den Anfang sind Strings, Integrer, Floats und Listen. Strings sind Wörter, beziehungsweise Zeichenketten. Generell sind das Wörter, aber auch Zahlen können Zeichenketten sein. Diese werden durch Anführungs- und Schlusszeichen gekennzeichnet. Um einen anderen Datentyp in ein String umzuwandeln, könnt ihr den Befehl str() verwenden. str(53) wäre so zum Beispiel "53". Integrer sind ganzzahlige Zahlen wie zum Beispiel 1, 3 oder 23. Um zum Beispiel eine Kommazahl auf die nächste ganzzahlige Zahl abzurunden und diese in einen Integrer umzuwandeln könnt ihr int() verwenden, int(2.99) ist zum Beispiel 2. Um (Gleit-)Kommazahlen werden gewöhnlicherweise als floats gespeichert. Um eine Zahl in eine Float umzuwandeln solltet ihr float() verwenden. Mithilfe von Listen kann man mehrere Werte in einer Liste speichern. Wie bei allen anderen Datentypen kann man diese danach verändern. Bei einer Liste können nach belieben auch verschiedene Datentypen gelöscht werden. Eine liste erstellt man mit eckigen Klammern. Ein Beispiel hierfür wäre die imaginäre Liste [1,"Apfel", 2.3].  </p>
@@ -85,11 +86,28 @@
 	<div class="achtung">
 	<p>String --> Zeichenketten --> str(53) ist die Zeichenkette "53" </p>
 	</br>
-	<p>Integrer --> ganzzahlige Zahlen --> Int(3) ist die ganzzahlige Zahl 3 </p>
+	<p>Integer --> ganzzahlige Zahlen --> Int(3) ist die ganzzahlige Zahl 3 </p>
 	</br>
 	<p>Float --> Kommazahlen --> float(3.2) ist die Kommazahl 3.2 </p>
 	</br>	
 	<p>Liste --> mehre Werte in einer Liste speichern --> [1,"Apfel", 2.3] ist die Liste mit den Elementen 1, "Apfel" und 2.3 </p>
+	</div>
+	<div class="text"> 
+		<p>Variabeln sind Platzhalter für einen bestimmten Wert. Dieser kann ein String, Liste, eine Zahl oder einen anderen beliebigen Datentyp sein. Mithilfe von Variablen kann man einen Wert zwischenspeichern, welchen man später wieder aufrufen und verwenden kann. Ein Beispiel ist dafür die Variable X, wie Sie in der Mathematik verwendet wird. In Python ist der umgang mit Variablen signifikant einfacher als in anderen Sprachen. In anderen Sprachen muss man die Variable deklarieren. Dies bedeutet, dass man die Variable einem Typ zuordnet. In Python geschieht dies automatisch. Ausserdem kann in Python der Wert und der Datentyp der Variable im Laufe des Programms verändert werden. Doch wie weist man einer Variable einen Wert zu? Dies ist eigentlich ganz einfach, wenn man zum Beispiel x den Wert 18 zuordnen möchte, würde der Programmcode beispielsweise so aussehen:"x=18". Hier ist es allerdings wichtig zu merken, dass das "=" nicht das gleiche wie ein "=" in der Mathematik ist.
+			Das "=" bedeutet hier lediglich, dass "X" den Wert 18 annimmt. Wenn man den Wert der Variable "Y" einer anderen Variable "X" zuordnen möchten würde. würde der Code so aussehen:</p>
+	</div>
+		<div class="achtungheader">
+			<p>Variabeln</p>
+		</div>
+			<div class="achtung">				
+				<p>Wenn man den Wert der Variable "Y" einer anderen Variable "X" zuordnen möchten würde. würde der Code so aussehen:</p>
+				<p>Y="Pizza" </p>
+				<p>X=Y</p>
+				<p>Im ersten Schritt erhält "Y" den Wert "Pizza". Im zweiten Schritt erhält "X" den Wert von "Y", in diesem Fall "Pizza".</p>
+			</div>
+	<div class="text">
+		</br> Auch wenn ich bis jetzt in allen Beispielen die Werte "X" und "Y" verwendet habe, kann man Variablen so nennen wie man will. Man kann der Name, insofern man dies will, auch Namen wie "Peter" geben. 
+		Wenn man diese Variable dann mithilfe von print() ausgeben will, muss man, anders als bei Text, den Variablennamen ohne Anfürungszeichen eingeben.</p>
 	</div>
 	<div class="übertitel">
 		<h3>Operatoren</h3>
@@ -117,8 +135,10 @@
 	</br>	
 	<p>Zähler%Nenner-> Modulus zweier Zahlen. Der Rest der Division ist das Resultat.</p>
 	</div>
+	<!a->b wechseln mit Tipp, schaue Zeile für Zeile an!>
 	<div class="question">
-	<p>Was würde Python ausgeben, wenn man ein Python Programm mit dem folgenden Sourcecode ausführen würde: print(5.0%3) ?</p>
+	<p>Was würde Python ausgeben, wenn man ein Python Programm mit dem folgenden Sourcecode ausführen würde: print(5.0%3) ?
+	Answer: 2.0</p>
 	</div>
 	</br>	
 	<div>
