@@ -12,7 +12,7 @@
 	<script src="CSS_JSS/script.js"></script>
 	<script src="CSS_JSS/answercheck.js"></script>
 </head>
-<body>
+<body onload="number()">
 <div class="navigation">
 	<div class="navbar">
 	<a href="/index">
@@ -143,6 +143,9 @@
 	<div>
 	<input type="text" id="answercheck" onchange="answerfunction()" >
 	</div>
+	<p class="textpoint">Du hast momentan:&nbsp;<span id="point"></span>&nbsp;Punkte
+	</br>
+	<span id="unlocked">Du braucht noch <span id="diff"></span>&nbsp;Punkt(e) um das nächste Kapitel freizuschalten.</span></p>
 	<a href=#question id="buttonhref">
 	<input class="nextlocked" type="button" id="next" value="Aufgabe noch nicht richtig gelöst.">
 	<a>
