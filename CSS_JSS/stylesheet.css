@@ -241,6 +241,10 @@ div.heading {
 	padding-left: 370px;
 	padding-right: 370px;
 }
+.codeaufgabe{
+	text-align: left;
+	margin-left: 50%;
+}
 .Begriffserklärungen{
 	margin-bottom: 75px;
 }
