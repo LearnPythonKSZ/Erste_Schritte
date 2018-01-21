@@ -231,9 +231,8 @@ div.heading {
 	color: red;
 }
 .answertrue{
-	color: green;
-	text-decoration:none;
-	font-size: 100%;
+	background-color: green;
+	color: white;
 }
 .text {
 	text-align: left;
