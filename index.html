@@ -136,13 +136,29 @@
 	</br>	
 	<p>Zähler%Nenner-> Modulus zweier Zahlen. Der Rest der Division ist das Resultat.</p>
 	</div>
-	<!-- a->b wechseln mit Tipp, schaue Zeile für Zeile an -->
+	<div class="question" id="question">
+	<p>Bei welchem dieser Sourcecodes würde Python bei der Ausführung 3.5 ausgeben?<p>
+	</div>
+	</br>
+	<div class="answers">
+	<input class="buttons" type="button" name="button1" value="" id="false" onclick="Question1('button1')"><label class="answer" id="answer1"> print("3.5" + "3.5")</label></br></br>
+	<input class="buttons" type="button" name="button2" value="" id="false" onclick="Question1('button2')"><label class="answer" id="answer2"> print(7//2)</label></br></br>
+	<input class="buttons" type="button" name="button3" value="" id="false" onclick="Question1('button3')"><label class="answer" id="answer3"> print(3.5)</label></br></br>
+	<input class="buttons" type="button" name="button4" value="" id="true" onclick="Question1('button4')"><label class="answer" id="answer4">print([3.5,2,1][0])</label> </br></br>	
+	</div>
+	<div class="question" id="question">
+	<p>Welchen Wert nimmt X an?</p>
+	</div>
+	</br>	
+	<div>
+	<input type="text" id="answercheck" onchange="answerfunction1()" >
+	</div>
 	<div class="question" id="question">
 	<p>Was würde Python ausgeben, wenn man ein Python Programm mit dem folgenden Sourcecode ausführen würde: print(5.0%3)?</p>
 	</div>
 	</br>	
 	<div>
-	<input type="text" id="answercheck" onchange="answerfunction()" >
+	<input type="text" id="answercheck" onchange="answerfunction2()" >
 	</div>
 	<p class="textpoint">Du hast momentan:&nbsp;<span id="point"></span>&nbsp;Punkte
 	</br>
