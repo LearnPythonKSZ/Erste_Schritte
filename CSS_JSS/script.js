@@ -140,7 +140,7 @@ function answerfunction1() {
 }
 function answerfunction2() {
     var answer=document.getElementById("answercheck").value;
-	if (answer=="2.0"||answer=="2,0"){
+	if (answer=="2.0"){
 		pointanswerfunction2 = 1;
 		pointunlock();
 
