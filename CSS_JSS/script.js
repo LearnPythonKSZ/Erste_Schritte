@@ -133,17 +133,23 @@ function Question2(name){
 function answerfunction1() {
     var answer=document.getElementById("answercheck").value;
 	if (answer=="18"){
+		document.getElementById("answercheck1").style.border = "solid 3px green";
 		pointanswerfunction1 = 1;
 		pointunlock();
 
+	}else{
+	document.getElementById("answercheck1").style.border = "solid 3px red";
 	}
 }
 function answerfunction2() {
     var answer=document.getElementById("answercheck").value;
 	if (answer=="2.0"){
+		document.getElementById("answercheck2").style.border = "solid 3px green";
 		pointanswerfunction2 = 1;
 		pointunlock();
 
+	}else{
+	document.getElementById("answercheck2").style.border = "solid 3px red";
 	}
 }
 function gap() {
