@@ -133,7 +133,7 @@ function Question2(name){
 function answerfunction1() {
     var answer=document.getElementById("answercheck1").value;
 	if (answer=="18"){
-		document.getElementById("answerchec1k").style.border = "solid 3px green";
+		document.getElementById("answercheck1").style.border = "solid 3px green";
 		pointanswerfunction1 = 1;
 		pointunlock();
 	
