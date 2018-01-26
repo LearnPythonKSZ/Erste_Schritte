@@ -9,6 +9,9 @@ var pointsneeded=1;
 var differenz= pointsneeded-points;
 function number(){
 	document.getElementById("point").innerHTML= points;
+	document.getElementById("pointquestion1").innerHTML= pointquestion1;
+	document.getElementById("pointanswerfunction1").innerHTML= pointanswerfunction1;
+	document.getElementById("pointanswerfunction2").innerHTML= pointanswerfunction2;
 	if(pointsneeded-points>0){
 		differenz= pointsneeded-points;
 		document.getElementById("diff").innerHTML=differenz;
@@ -135,6 +138,7 @@ function answerfunction1() {
 	if (answer=="18"){
 		document.getElementById("answercheck1").style.border = "solid 3px green";
 		pointanswerfunction1 = 1;
+		document.getElementById("pointanswerfunction1").innerHTML= pointanswerfunction1;
 		pointunlock();
 	
 	}else{
