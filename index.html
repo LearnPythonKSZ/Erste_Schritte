@@ -38,7 +38,7 @@
 	</div>
 	<div class="text"> 
 		<p>In diesem Lernkursabschnitt beginnen wir mit dem tatsächlichen Programmieren. Dafür müsst ihr zuerst in der Python IDLE, oder eurer alternativen Entwicklungsumgebung, ein neues Dokument öffnen. Bei der Python IDLE könnt ihr das entweder mit CTRL+N oder File->"New File".</p> 
-		</br> 
+		<br> 
 		<p>Beim Programmieren genügt es nicht reinzuschreiben "sage mir was das Resultat von 5+10 ist", denn das versteht Python nicht. Python funktioniert nur mit bestimmten "Befehlen". Der entsprechende Befehl dafür wäre: print(5+10), aber dazu kommen wir später.  </p>
 	</div>
 	<div class="übertitel">
@@ -85,11 +85,11 @@
 	</div>
 	<div class="achtung">
 	<p>String --> Zeichenketten --> str(53) ist die Zeichenkette "53" </p>
-	</br>
+	<br>
 	<p>Integer --> ganzzahlige Zahlen --> Int(3) ist die ganzzahlige Zahl 3 </p>
-	</br>
+	<br>
 	<p>Float --> Kommazahlen --> float(3.2) ist die Kommazahl 3.2 </p>
-	</br>	
+	<br>	
 	<p>Liste --> mehre Werte in einer Liste speichern --> [1,"Apfel", 2.3] ist die Liste mit den Elementen 1, "Apfel" und 2.3 </p>
 	</div>
 	<div class="text"> 
@@ -106,7 +106,7 @@
 				<p>Im ersten Schritt erhält "Y" den Wert "Pizza". Im zweiten Schritt erhält "X" den Wert von "Y", in diesem Fall "Pizza".</p>
 			</div>
 	<div class="text">
-		</br> Auch wenn ich bis jetzt in allen Beispielen die Werte "X" und "Y" verwendet habe, kann man Variablen so nennen wie man will. Man kann der Variable jeden beliebigen Namen geben. Es gibt allerdings eine Ausnahme. Wörter, welche bereits von Python verwendet werden wie "if" oder "or" können nicht als Variablennamen verwendet werden. 
+		<br> Auch wenn ich bis jetzt in allen Beispielen die Werte "X" und "Y" verwendet habe, kann man Variablen so nennen wie man will. Man kann der Variable jeden beliebigen Namen geben. Es gibt allerdings eine Ausnahme. Wörter, welche bereits von Python verwendet werden wie "if" oder "or" können nicht als Variablennamen verwendet werden. 
 		Wenn man die Werte dieser Variablen dann mithilfe von print() ausgeben will, muss man, anders als bei einem Text, den Variablennamen ohne Anfürungszeichen eingeben.</p>
 	</div>
 	<div class="übertitel">
@@ -114,7 +114,7 @@
 	</div>
 	<div class="text">
 		<p>Das grundlegenden Operatoren wie +,-,* und / (beziehungsweise "Plus","Minus","mal" und "geteilt durch") sind ziemlich selbsterklärend und dieselben wie auf einem gewöhnlichen Taschenrechner. Bei der Division sind die Datentypen wieder ein Thema. Normalerweise erhaltet man bei einer Division immer eine Float als Resultat. Wenn man allerdings ein Integrer als Resultat erhalten will muss man die sogenannte "flooring Division" verwenden. Das Operationszeichen für die "flooring Division" ist ein doppelter Bruchstrich (//). </p>
-		</br> 
+		<br> 
 		<p>Eher ungewöhnlich sind die Notationen für das potenzieren und den Modulo (Rest einer Divison). Denn diese sind Zahl**Exponent für die Potenz beziehungsweise Zähler%Nenner für den Modulo. </p>
 	</div>
 	<div class="achtungheader">
@@ -122,17 +122,17 @@
 	</div>
 	<div class="achtung">
 	<p>Summand+Summand -> addiert zwei Zahlen. </p>
-	</br>
+	<br>
 	<p>Minuend-Subtrahend -> subtrahiert zwei Zahlen. </p>
-	</br>
+	<br>
 	<p>Faktor*Faktor-> multipliziert zwei Zahlen. </p>
-	</br>	
+	<br>	
 	<p>Zähler/Nenner-> dividiert zwei Zahlen. Das Resultat ist eine Float (Kommazahl). </p>
-	</br>	
+	<br>	
 	<p>Zähler//Nenner->dividiert zwei Zahlen. Das Resultat ist ein Integrer (ganzzahlige Zahl). </p>
-	</br>	
+	<br>	
 	<p>Zahl**Exponent-> Zahl wird mit Exponent potenziert </p>
-	</br>	
+	<br>	
 	<p>Zähler%Nenner-> Modulo zweier Zahlen. Der Rest der Division ist das Resultat.</p>
 	</div>
 	<div class="question" id="question">
@@ -140,7 +140,7 @@
 	<button id="helpbutton1"  class="helpbutton" onclick="help(helpbuttontext1,helpbutton1,null)">?</button>
 	</div>
 	<p id="helpbuttontext1" class="hilfetext" style="display:none" >Überlege dir genau, welche Datentypen oder Rechenoperationen hier zum Zug kommen. Falls dir ein Datentyp oder eine Rechenoperation nicht bekannt ist, kannst du es im Text nachlesen.</p>
-	</br>
+	<br>
 	<div class="answers">
 	<input class="buttons" type="button" name="button1" value="" id="false" onclick="Question1('button1')"><label class="answer" id="answer1"> print("3.5" + "3.5")</label></br></br>
 	<input class="buttons" type="button" name="button2" value="" id="false" onclick="Question1('button2')"><label class="answer" id="answer2"> print(7//2)</label></br></br>
@@ -158,24 +158,24 @@
 <p>#X=17</p>
 <p>Print (X)</p>
 </div>
-	</br>	
+	<br>	
 	<div>
 	<input type="text" id="answercheck1" onchange="answerfunction1()" >
 	</div>
-</br>
+<br>
 	<button id="solutionbutton2"  class="solutionbutton" onclick="solution(solutionbutton2)"><span id="solutiontag2">Lösung anzeigen</span><span id="solution2" class="solution">X=18, da in der zweiten Linie nur B den Wert von X zugewiesen wird. Aufgrund des # ist die 3. Zeile ein Kommentar und wird nicht verarbeitet.</span></button>
 	<div class="question" id="question">
 	<p>Was würde Python ausgeben, wenn man ein Python Programm mit dem folgenden Sourcecode ausführen würde: print(5.0%3)? (<span id="pointanswerfunction2"></span>/1P.)</p>
 	<button id="helpbutton3" class="helpbutton" onclick="help(helpbuttontext2,helpbutton3,null)">?</button>
 	</div>
 	<p id="helpbuttontext2" class="hilfetext" style="display:none" >Überlege dir, welcher Datentyp 5.0 beziehungsweise 3 ist und wie die Rechenoperation % («Modulo») die beiden Zahlen und ihre Datentypen verarbeitet. </p>
-	</br>	
+	<br>	
 <div>
 	<input type="text" id="answercheck2" onchange="answerfunction2()" >
 	</div>
-</br>
+<br>
 	<button id="solutionbutton3"  class="solutionbutton" onclick="solution(solutionbutton3)"><span id="solutiontag3">Lösung anzeigen</span><span id="solution3" class="solution">Der Modulo gibt den Rest einer Division aus. Der Rest bei dieser Rechnung wäre 2. Da der Computer hier allerdings mit Floats rechnet ist das Ergebnis 2.0.</span></button>
-	</br>
+	<br>
 <div class="achtungheader">
 	<p>Weitere Aufgaben</p>
 	</div>
@@ -183,7 +183,7 @@
 	<p>Von nun an findest du weitere, fordernde Aufgaben <a href="/Aufgaben/" target="_blank" style="color:#ffcc66;">hier</a></p>
 	</div>		
 <p class="textpoint">Du hast momentan:&nbsp;<span id="point"></span>&nbsp;Punkte
-	</br>
+	<br>
 	<span id="unlocked">Du braucht noch <span id="diff"></span>&nbsp;Punkt(e) um das nächste Kapitel freizuschalten.</span></p>
 	<a href=#question id="buttonhref">
 	<input class="nextlocked" type="button" id="next" value="Aufgabe noch nicht richtig gelöst.">
