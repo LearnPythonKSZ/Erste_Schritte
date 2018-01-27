@@ -264,7 +264,7 @@ div.heading {
 	font-size: 120%
 }
 .answers{
-	margin-left: 37%;
+	margin-left: calc(50%-80px);
 	font-size: 100%;
 }
 .answer{
